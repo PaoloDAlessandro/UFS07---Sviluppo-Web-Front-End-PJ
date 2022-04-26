@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/fonts/Poppins/stylesheet.css">
+    <link rel="stylesheet" href="/assets/fonts/Roboto/stylesheet.css">
+    <title>Cryptech</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="/">
+                <img src="assets/img/logo.png" alt="site logo" id="site_logo">
+            </a>
+                
+        </div>
+
+        <nav>
+
+            <a href="javascript:changeMode()" id="mode_icon"><i class="fa-solid fa-moon"></i> </a>
+            <a href="javascript:changeLang()"><img src="assets/img/it.png" alt="lang-flag" id="lang_icon"></a>
+
+        </nav>
+
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="javascript:openmobilenav()" id="hamburgher"><i class="fa-solid fa-bars"></i></a>
+        </nav>
+
+        <div class="curtain-nav" id="curtain-nav">
+            <ul>
+
+                <li><a href="javascript:changeMode()" id="mode_icon_mobile"><i class="fa-solid fa-moon"></i></a></li>
+                <li><a href="javascript:changeLang()"><img src="assets/img/it.png" alt="lang-flag" id="lang_icon_mobile"></a></li>
+            </ul>
+        </div>
+
+
+    </header>
+
+    <div class="crypto-container">
+        <div class="crypto-container-box-text">
+            <h1>Cardano</h1>
+            <div class="crypto-container-box-text_paragraph">
+                <p id="introduction">It is a platform for the execution of smart contracts released in 2017, conceptually similar to Ethereum but structured on different levels, each one focused on particular characteristics such as scalability or security. Cardano is developed by IOHK, a peer-to-peer technology development company headed by Charles Hoskinson, former founding member of Ethereum. For the design of its platform, Cardano used a scientific approach, subjecting the different components of the system to peer-reviewed academic research. It can therefore be seen as a project guided by a rigorous scientific approach.                </p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p1_title">Technical overview</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p1_text">Cardano is part of the projects that try to solve some intrinsic problems of the first generation of blockchains, such as the scalability and speed of transactions. The focus is therefore on building a more sustainable and balanced blockchain ecosystem. It is mainly composed of two layers: the Cardano Settlement Layes (CSL), used to settle transactions that use ADA, and the Control Layer, used to execute smart contracts. The consensus protocol used is called Ouroboros and is based on the Proof of Stake.                </p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p2_title">MONETARY POLICY</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p2_text">ADA is a mineable cryptocurrency with a maximum amount of 45 billion, a circulating amount of approximately 31 billion. It currently reaches its historic peak with a market cap of $ 56 billion.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="crypto-container-box-illustration">
+            <iframe src="https://widget.coinlib.io/widget?type=single_v2&theme=light&coin_id=122882&pref_coin_id=1505" id="crypto_iframe" width="auto" height="196px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe>
+        </div>
+
+        
+    </div>
+
+    <br><br><br><br>
+
+
+    <footer id="footer">
+        <div class="footer_box">
+        </div>
+        <div class="footer_box">
+            <p>© 2022 cryptech</p>
+        </div>
+        <div class="footer_box">
+            <p>Made with ❤️ by Paolo D'Alessandro</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/scripts/cardano.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://kit.fontawesome.com/9d05a115fd.js" crossorigin="anonymous"></script>
+</body>
+</html>

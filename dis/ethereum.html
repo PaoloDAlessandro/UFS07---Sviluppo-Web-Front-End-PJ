@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/fonts/Poppins/stylesheet.css">
+    <link rel="stylesheet" href="/assets/fonts/Roboto/stylesheet.css">
+    <title>Cryptech</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="/">
+                <img src="assets/img/logo.png" alt="site logo" id="site_logo">
+            </a>
+                
+        </div>
+
+        <nav>
+
+            <a href="javascript:changeMode()" id="mode_icon"><i class="fa-solid fa-moon"></i> </a>
+            <a href="javascript:changeLang()"><img src="assets/img/it.png" alt="lang-flag" id="lang_icon"></a>
+
+        </nav>
+
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="javascript:openmobilenav()" id="hamburgher"><i class="fa-solid fa-bars"></i></a>
+        </nav>
+
+        <div class="curtain-nav" id="curtain-nav">
+            <ul>
+
+                <li><a href="javascript:changeMode()" id="mode_icon_mobile"><i class="fa-solid fa-moon"></i></a></li>
+                <li><a href="javascript:changeLang()"><img src="assets/img/it.png" alt="lang-flag" id="lang_icon_mobile"></a></li>
+            </ul>
+        </div>
+
+
+    </header>
+
+    <div class="crypto-container">
+        <div class="crypto-container-box-text">
+            <h1>Ethereum</h1>
+            <div class="crypto-container-box-text_paragraph">
+                <p id="introduction">It can be seen as a global computer, in which programs (called smart contracts) are executed in a decentralized, continuous and uncensored way.                </p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p1_title">Technical overview</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p1_text">Ethereum is a non-specialized blockchain, i.e. a blockchain that does not have a specific purpose but can be programmed, through the use of smart contracts, to adapt to different scenarios (generalized blockchain). The blockchain is public, without authorizations and uses a consensus algorithm based on the Proof of Work, with a block time of about 10-20 seconds. However Ethereum is planning to migrate to a Proof of Stake protocol called Casper.                </p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p2_title">MONETARY POLICY</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p2_text">Ethereum uses its own currency, called Ether (ETH). There is currently no maximum amount of ETH and the inflation rate is controlled by limiting the number of ETH generated each year. There are several proposals for the imposition of a maximum amount in the future.
+
+                </p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p3_title">GAS</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p3_text">the ETH token is used to pay for gas, a unit of measurement used to determine the amount of computation needed to perform an operation on the blockchain. The gas needed to carry out an operation is often compared to the fuel used by a car to make the journey. Each operation on the blockchain has a defined cost. Gas is a concept exclusively related to transactions (there is no gas token in Ethereum). Every transaction made on Ethereum has two parameters: the gas price and the gas limit. In Ethereum there is no concept of the maximum size of a block as in Bitcoin, but rather refers to the gas limit of a block, which defines the maximum amount of calculations per second.                </p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p4_title">ADDRESSES AND PRIVACY</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p4_text">There are two types of accounts in Ethereum: accounts not associated with smart contracts and accounts associated with smart contracts. A normal account can receive and send transactions, but it is not associated with any smart contract and is usually controlled by a person. An account associated with a smart contract, on the other hand, contains a program that is activated when the address associated with it receives a transaction, behaving as defined in the smart contract.                </p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p4_title">EVM</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p4_text">The Ethereum Virtual Machine (EVM) is the environment within which a smart contract is executed. A Virtual Machine is software that contains a fully encapsulated operating system. For example it is possible to use a virtual machine to use Windows within MacOs. Virtual machines are convenient for separating two environments and making them completely independent. The EVM ensures that every contract is executed the same way on every (full) node, in an isolated and secure environment. The state of the EVM is saved on the blockchain.                </p>
+            </div>
+        </div>
+
+        <div class="crypto-container-box-illustration">
+            <iframe src="https://widget.coinlib.io/widget?type=single_v2&theme=light&coin_id=145&pref_coin_id=1505" id="crypto_iframe" width="auto" height="196px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe>
+        </div>
+
+        
+    </div>
+
+    <br><br><br><br>
+
+
+    <footer id="footer">
+        <div class="footer_box">
+        </div>
+        <div class="footer_box">
+            <p>© 2022 cryptech</p>
+        </div>
+        <div class="footer_box">
+            <p>Made with ❤️ by Paolo D'Alessandro</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/scripts/ethereum.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://kit.fontawesome.com/9d05a115fd.js" crossorigin="anonymous"></script>
+</body>
+</html>

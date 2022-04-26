@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/fonts/Poppins/stylesheet.css">
+    <link rel="stylesheet" href="/assets/fonts/Roboto/stylesheet.css">
+    <title>Cryptech</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="/">
+                <img src="assets/img/logo.png" alt="site logo" id="site_logo">
+            </a>
+                
+        </div>
+
+        <nav>
+
+            <a href="javascript:changeMode()" id="mode_icon"><i class="fa-solid fa-moon"></i> </a>
+            <a href="javascript:changeLang()"><img src="assets/img/it.png" alt="lang-flag" id="lang_icon"></a>
+
+        </nav>
+
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="javascript:openmobilenav()" id="hamburgher"><i class="fa-solid fa-bars"></i></a>
+        </nav>
+
+        <div class="curtain-nav" id="curtain-nav">
+            <ul>
+
+                <li><a href="javascript:changeMode()" id="mode_icon_mobile"><i class="fa-solid fa-moon"></i></a></li>
+                <li><a href="javascript:changeLang()"><img src="assets/img/it.png" alt="lang-flag" id="lang_icon_mobile"></a></li>
+            </ul>
+        </div>
+
+
+    </header>
+
+    <div class="crypto-container">
+        <div class="crypto-container-box-text">
+            <h1>Bitcoin</h1>
+            <div class="crypto-container-box-text_paragraph">
+                <p id="introduction">A purely peer-to-peer version of electronic money would allow online payments to be sent directly from one entity to another without going through a financial institution.</p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p1_title">Technical overview</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p1_text">Bitcoin is a mineable cryptocurrency with a consensus protocol based on the Proof of Work. Each time a new block is created, the system also generates a defined amount of bitcoins which is used as a reward for the miner who creates the block. Miners generate a new block every 10 minutes on average, and receive a reward in the form of bitcoin and transaction fees.</p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p2_title">MONETARY POLICY</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p2_text">The initial block generation premium was 50 BTC. Every 210,000 blocks (4 years) the block reward is halved (currently 6.25 BTC). The maximum amount of bitcoins that can ever be in circulation is set at 21 million. Inflation in Bitcoin is mathematically defined. To date, around 18 million bitcoins have been created, out of a total of 21 million. This means that bitcoin will reach its maximum asymptotically around 2140. For this particular monetary policy, Bitcoin is therefore defined by many as a deflationary system.</p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4>MINING</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p3_text">In Bitcoin mining uses the Proof of Work which is based on the resolution of a complex problem that requires a lot of computational power. Due to the low probability of finding a block, miners realized that it was more convenient to group and divide the mining problem into several parts, assigning each part to a different miner. At the moment most Bitcoin mining is grouped into large mining pools, and the top five mining pools control over 50% of the total hashrate.</p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p4_title">ADDRESSES AND PRIVACY</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p4_text">Bitcoin uses a public blockchain (transactions are accessible and can be analyzed by anyone). It is therefore possible to view all the transactions in which a specific address has been involved. However, the public address does not provide any direct information about the owner of that address. This is considered a pseudo-anonymous model, which means that the funds are not tied to real world entities but rather to addresses that are public but at the same time anonymous.</p>
+            </div>
+        </div>
+
+        <div class="crypto-container-box-illustration">
+            <iframe src="https://widget.coinlib.io/widget?type=single_v2&amp;theme=light&amp;coin_id=859&amp;pref_coin_id=1505" id="crypto_iframe" width="auto" height="196px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe>
+        </div>
+
+        
+    </div>
+
+    <br><br><br><br>
+
+
+    <footer id="footer">
+        <div class="footer_box">
+        </div>
+        <div class="footer_box">
+            <p>© 2022 cryptech</p>
+        </div>
+        <div class="footer_box">
+            <p>Made with ❤️ by Paolo D'Alessandro</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/scripts/bitcoin.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://kit.fontawesome.com/9d05a115fd.js" crossorigin="anonymous"></script>
+</body>
+</html>

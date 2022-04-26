@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/fonts/Poppins/stylesheet.css">
+    <link rel="stylesheet" href="/assets/fonts/Roboto/stylesheet.css">
+    <title>Cryptech</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="/">
+                <img src="assets/img/logo.png" alt="site logo" id="site_logo">
+            </a>
+                
+        </div>
+
+        <nav>
+
+            <a href="javascript:changeMode()" id="mode_icon"><i class="fa-solid fa-moon"></i> </a>
+            <a href="javascript:changeLang()"><img src="assets/img/it.png" alt="lang-flag" id="lang_icon"></a>
+
+        </nav>
+
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="javascript:openmobilenav()" id="hamburgher"><i class="fa-solid fa-bars"></i></a>
+        </nav>
+
+        <div class="curtain-nav" id="curtain-nav">
+            <ul>
+
+                <li><a href="javascript:changeMode()" id="mode_icon_mobile"><i class="fa-solid fa-moon"></i></a></li>
+                <li><a href="javascript:changeLang()"><img src="assets/img/it.png" alt="lang-flag" id="lang_icon_mobile"></a></li>
+            </ul>
+        </div>
+
+
+    </header>
+
+    <div class="crypto-container">
+        <div class="crypto-container-box-text">
+            <h1>Eos</h1>
+            <div class="crypto-container-box-text_paragraph">
+                <p id="introduction">It is a blockchain-based ecosystem for developing decentralized applications, conceptually similar to Ethereum. It was co-founded by Dan Larimer, already creator of other projects such as Bitshares and Steem. The EOS ecosystem is composed of two elements: the EOS token and the EOS.IO platform. EOS.IO is a blockchain that uses the EOS token as a native cryptocurrency. The EOS token guarantees the owner a certain portion of resources on the network, which if not used can be rented to other users. EOS is often regarded as Ethereum's main competitor.                </p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p1_title">Technical overview</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p1_text">Ethereum is currently the best known and most used project for creating decentralized applications, but it suffers from several problems such as scalability limits, low throughput and high transaction costs, which are holding back its adoption. EOS.IO aims to concentrate all the best features of different blockchains in a single platform, such as the security of Bitcoin and the versatility of Ethereum.               </p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p2_title">technology</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p2_text">EOS uses a variation of Proof of Stake as a consensus protocol, called Delegated Proof of Stake (DPoS). In this model there are no miners, but 21 block producers, elected by EOS token holders and rewarded with EOS tokens. One can think of the DPoS as a representative democracy, while the PoS would be a direct democracy. The block producers are subjected to a continuous voting process by all EOS token holders, who can eventually remove a specific node if it behaves incorrectly. This system allows the generation of new blocks in extremely quickly, solving most of the scalability problems. However, as already discussed in the scalability trilemma, it is not possible to have security, scalability and decentralization at the same time, but a compromise must be found. Ethereum has chosen security and decntralization, at the cost of reduced scalability. EOS reduces decentralization, employing 21 representatives of the entire consensus process, and allowing for superior scalability. Currently a new block is generated every 0.5 seconds with a final throughput of approximately 3,000 tps on average.                </p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p3_title">MONETARY POLICY</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p3_text">At the launch of EOS, 1 billion tokens were generated. Each year the total quantity is increased by 5%. The new tokens generated are used for example to reward nodes that contribute to the verification of transactions and the production of blocks. The EOS token surpassed the $ 15 billion market cap in May 2018.                </p>
+            </div>
+        </div>
+
+        <div class="crypto-container-box-illustration">
+            <iframe src="https://widget.coinlib.io/widget?type=single_v2&theme=light&coin_id=585&pref_coin_id=1505" id="crypto_iframe" width="auto" height="196px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe>
+        </div>
+
+        
+    </div>
+
+<br><br><br><br>
+    <footer id="footer">
+        <div class="footer_box">
+        </div>
+        <div class="footer_box">
+            <p>© 2022 cryptech</p>
+        </div>
+        <div class="footer_box">
+            <p>Made with ❤️ by Paolo D'Alessandro</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/scripts/eos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://kit.fontawesome.com/9d05a115fd.js" crossorigin="anonymous"></script>
+</body>
+</html>

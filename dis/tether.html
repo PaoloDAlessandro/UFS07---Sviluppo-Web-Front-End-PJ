@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/fonts/Poppins/stylesheet.css">
+    <link rel="stylesheet" href="/assets/fonts/Roboto/stylesheet.css">
+    <title>Cryptech</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="/">
+                <img src="assets/img/logo.png" alt="site logo" id="site_logo">
+            </a>
+                
+        </div>
+
+        <nav>
+
+            <a href="javascript:changeMode()" id="mode_icon"><i class="fa-solid fa-moon"></i> </a>
+            <a href="javascript:changeLang()"><img src="assets/img/it.png" alt="lang-flag" id="lang_icon"></a>
+
+        </nav>
+
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="javascript:openmobilenav()" id="hamburgher"><i class="fa-solid fa-bars"></i></a>
+        </nav>
+
+        <div class="curtain-nav" id="curtain-nav">
+            <ul>
+
+                <li><a href="javascript:changeMode()" id="mode_icon_mobile"><i class="fa-solid fa-moon"></i></a></li>
+                <li><a href="javascript:changeLang()"><img src="assets/img/it.png" alt="lang-flag" id="lang_icon_mobile"></a></li>
+            </ul>
+        </div>
+
+
+    </header>
+
+    <div class="crypto-container">
+        <div class="crypto-container-box-text">
+            <h1>Tether</h1>
+            <div class="crypto-container-box-text_paragraph">
+                <p id="introduction">is a cryptocurrency based on the value of the US dollar: 1 USDT is always equal to $ 1. it is the most popular among the cryptocurrencies that fall under the definition of stable coin, i.e. those cryptocurrencies designed to maintain a stable value over time, based on the value of other currencies or commodities such as dollars, euros, gold etc. The value of the Tether is guaranteed by collateral that equals the number of USDT in circulation, in this case in US dollars.</p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p1_title">Technical overview</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p1_text">Tether is mainly used by crypto-exchanges to simulate the use of fiat motives such as USD and EUR, while avoiding all the problems related to their management (Know Your Customer). Tether uses a protocol called 'Omni Layer' which allows you to create and trade digital assets using the Bitcoin blockchain.                </p>
+            </div>
+
+            <div class="crypto-container-box-text_sub-title">
+                <h4 id="p2_title">MONETARY POLICY</h4>
+            </div>
+
+            <div class="crypto-container-box-text_paragraph">
+                <p id="p2_text">Ogni USDT in circolazione ha un corrispettivo USD su dei conti bancari. Non esiste un numero massimo di tether e questi vengono creati su richiesta.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="crypto-container-box-illustration">
+            <iframe src="https://widget.coinlib.io/widget?type=single_v2&theme=light&coin_id=637&pref_coin_id=1505" id="crypto_iframe" width="auto" height="196px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe>
+        </div>
+
+        
+    </div>
+
+    <br><br><br><br>
+
+
+    <footer id="footer">
+        <div class="footer_box">
+        </div>
+        <div class="footer_box">
+            <p>© 2022 cryptech</p>
+        </div>
+        <div class="footer_box">
+            <p>Made with ❤️ by Paolo D'Alessandro</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/scripts/tether.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://kit.fontawesome.com/9d05a115fd.js" crossorigin="anonymous"></script>
+</body>
+</html>
