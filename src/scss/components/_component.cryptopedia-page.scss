@@ -1,0 +1,68 @@
+.crypto-container {
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    &-box-text {
+        width: 70%;
+
+        & h1 {
+            font-family: "Roboto", sans-serif;
+            font-size: 42px;
+            color: #343352;
+            margin-bottom: 20px;
+
+        }
+
+        &_paragraph {
+            font-size: 16px;
+            color: #5c6771;
+            margin-right: 200px;
+        }
+
+        &_sub-title {
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            color: #343352;
+            font-size: 22px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+
+        }
+
+    }
+
+    &-box-illustration {
+        width: 30%;
+        margin-top: 80px;
+        
+        & iframe {
+            box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px;
+            position: fixed;
+            border-radius: 12px;
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 1500px) {
+
+    .crypto-container {
+        flex-direction: column;
+        align-items: center;
+
+        &-box-text {
+            width: 100%;
+            text-align: center;
+
+            &_paragraph {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    }
+
+}

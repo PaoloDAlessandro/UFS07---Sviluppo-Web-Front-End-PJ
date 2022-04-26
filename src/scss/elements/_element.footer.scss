@@ -1,0 +1,31 @@
+footer {
+    height: 100px;
+    background-color: #171924;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & .footer_box {
+        width: 30%;
+
+    }
+    
+        & p {
+            text-align: center;
+            color: #F2F2F2;
+            font-size: 14px;
+        }   
+}
+
+@media screen and (max-width: 1500px) {
+
+    footer {
+        flex-direction: column;
+        
+        & .footer_box {
+            width: 60%;
+        }
+    }
+
+}

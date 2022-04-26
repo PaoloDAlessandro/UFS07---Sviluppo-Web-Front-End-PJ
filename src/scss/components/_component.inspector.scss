@@ -1,0 +1,119 @@
+.inspector {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & input {
+        font-family: 'Poppins', sans-serif;
+        width: 30%;
+        border-radius: 8px;
+        outline: none;
+        border: 0;
+        padding: 12px 10px;
+        height: 36px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+
+    & label {
+        color: #343352;
+        font-size: 12px;
+        margin-top: 6px;
+    }
+
+    &_input-dark {
+        background-color: #292C33;
+        color: #f2f2f2;
+
+        &::placeholder {
+            color: #f2f2f2;
+        }
+    }
+
+    &_container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 10vh;
+        justify-content: space-evenly;
+    
+        &-box {
+            position: relative;
+            width: 20%;
+            height: 140px;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 24px rgb(196 196 196 / 24%);
+
+            &-title {
+                display: flex;
+                flex-wrap: nowrap;
+                width: 100%;
+                margin-left: -10px;
+                align-items: center;
+                margin-top: 14px;
+                    justify-content: center;
+            
+                &-icon {
+                    display: flex;
+                    padding: 8px;
+                    width: 32px;
+                    border-radius: 50%;
+                    height: 32px;
+                    background-color: #EDF1F4;
+                    justify-content: center;
+                    align-items: center;
+
+                    & i {
+                        color: #4853F7;
+                        font-size: 14px;
+                    }
+                }
+
+                &-text {
+                    font-size: 16px;
+                }
+            
+            }
+
+            &-body {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                //margin-top: 10px;
+
+                & p {
+                    font-size: 16px;
+                }
+            } 
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .inspector_container-box {
+        min-width: 200px;
+        margin-bottom: 60px;
+    }
+
+    .margin-fixed {
+        margin-left: 0;
+    }
+
+    .inspector {
+        
+        & input {
+            width: 70%;
+        }
+        
+        & label {
+            font-size: 10px;
+        }
+    }
+
+}

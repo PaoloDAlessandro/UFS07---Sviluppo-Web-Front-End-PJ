@@ -1,0 +1,61 @@
+nav {
+    & a{
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 4px;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 275ms ease;
+
+        & img {
+            width: 24px;
+            position: relative;
+            top: 5px;
+        }
+
+        &:active {
+            color: $black-link;
+        }
+
+        &:hover {
+            background-position: 0 100%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    #lang_icon_mobile {
+        width: 24px;
+    }
+}
+
+@media screen and (min-width: 1501px) {
+    nav {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+}

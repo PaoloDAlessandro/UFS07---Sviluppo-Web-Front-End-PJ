@@ -1,0 +1,15 @@
+body {
+    font-size: 14px;
+    background-color:  $bkg-color;
+
+    @include respond-between(md, lg) {
+        font-size: 16px;
+        background-color:  lighten($red, 10);
+    }
+
+    @include respond-above(lg) {
+        font-size: 18px;
+        background-color:  lighten($bkg-color, 10);
+    }
+
+}
